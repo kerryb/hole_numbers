@@ -11,5 +11,9 @@ defmodule HoleNumbersTest do
         assert HoleNumbers.holes(@number) == @holes
       end
     end)
+
+    test "adds up the holes in multi-digit numbers" do
+      assert HoleNumbers.holes(1_420_608) == 6
+    end
   end
 end
