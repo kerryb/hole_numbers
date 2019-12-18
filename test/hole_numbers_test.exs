@@ -16,4 +16,10 @@ defmodule HoleNumbersTest do
       assert HoleNumbers.holes(1_420_608) == 6
     end
   end
+
+  describe "HoleNumbers.sum_of_holes/1" do
+    test "adds up the holes in all the numbers from 1 to the one supplied" do
+      assert HoleNumbers.sum_of_holes(6259) == 12345
+    end
+  end
 end
