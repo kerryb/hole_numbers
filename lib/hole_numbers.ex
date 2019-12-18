@@ -1,18 +1,5 @@
 defmodule HoleNumbers do
-  @moduledoc """
-  Documentation for HoleNumbers.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> HoleNumbers.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  def holes(8), do: 2
+  def holes(number) when number in [0, 4, 6, 9], do: 1
+  def holes(_number), do: 0
 end
